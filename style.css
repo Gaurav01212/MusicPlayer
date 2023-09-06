@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto+Slab&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto+Condensed:wght@300&family=Roboto+Slab&display=swap');
+
+*{margin: 0px;
+padding:0px;
+box-sizing: border-box;
+font-family: 'Merriweather', serif;
+font-family: 'Roboto Slab', serif;
+text-decoration: none;
+color:white;
+box-sizing: border-box;
+
+
+
+}
+*::selection{
+    color:rgb(255, 255, 255);
+    background-color: black;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+.main{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(191, 167, 136);
+    position: relative;
+    display: flex;
+   justify-content: center;
+   background-image: url('./bakcground/bakcground-img.jpg');
+   /* flex-direction: column; */
+    
+}
+
+nav{
+    overflow: hidden;
+    border-radius: 40px;
+    position:absolute;
+    top: 4px;
+    padding: 0px 10px;
+    
+    
+    padding: 0px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 98vw;
+    background-color: rgb(0, 0, 0);
+}
+
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap:6px
+
+}
+
+.logo h2::first-letter{
+    color:rgb(52, 180, 110);
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+nav img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.func{
+    position:absolute;
+    right:40%;
+}
+.func #search-bar{
+       border-radius: 20px;
+       background-color: white;
+       padding:3px 6px;
+       border: none;
+       width: 20vw;
+}
+
+
+
+i{
+    color:white;
+}
+
+.rotate {
+    transition: transform 0.5s ease-in-out;
+    animation: rotate 2s linear infinite; /* Add animation for continuous rotation */
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+/* activity area and music list ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.music-area{
+    overflow: hidden;
+    height: 70vh;
+    width: 70vw;
+    background-color: red;
+    position: absolute;
+    top:100px;
+   
+    border-radius: 20px;
+    background-image: url("./images/img.jpeg");
+    background-size: cover;
+}
+.music-area h2{
+    margin:10px 15px;
+    font-size: 15px;
+}
+
+.song-list{
+    
+    margin-top: 16px;
+    padding:1vw 1vw;
+    height: 90%;
+    width: 40%;
+    /* background-color: red; */
+
+}
+.song-item{
+    font-family: 'Merriweather', serif;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 34px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top:5px;
+    
+
+}
+.song-item h2:nth-child(2){
+    font-weight: 300;
+}
+.song-item .cover-image{
+    height: 30px;
+    width: 30px;
+    /* background-color: blue; */
+   margin-left:8px;
+    border-radius: 20px;
+}
+
+.song-item h2{
+    font-size: 0.8vw;
+    color:black;
+}
+
+.song-item .play-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2px;
+    margin-right: 8px;
+    
+}
+.play-option i{
+    color:black;
+    font-size: 18px;
+}
+.play-option i:hover{
+    cursor:pointer;
+    color:green
+}
+
+img{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+/* playing status  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.play-status{
+    overflow: hidden;
+    position: absolute;
+    bottom:4px;
+    width: 97vw;
+    height: 13vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#progress-bar{
+    width: 90vw;
+    cursor: pointer;
+    position: absolute;
+    top:27px;
+}
+
+.icons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:7px;
+    margin-top:5px;
+}
+
+
+
+.icons i:nth-child(2){
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top:1px
+}
+.icons i:nth-child(2n+1){
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+.icons i:nth-child(1){
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 22px;
+    top:3px
+    
+}
+.icons i:nth-child(3){
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+  left:22px;
+  top:3px;
+    
+}
+
+.status{
+    position: absolute;
+    top:43px;
+    left:3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.status img{
+    width: 80px;
+    height: 50px;
+    opacity: 0;
+    transition:opacity 0.9s ease-in-out;
+}
+
+.status span{
+    font-size: 1vw;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
