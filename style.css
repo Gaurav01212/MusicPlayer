@@ -41,10 +41,10 @@ nav{
     overflow: hidden;
     border-radius: 40px;
     position:absolute;
-    top: 4px;
+    top: 2px;
     padding: 0px 10px;
     
-    
+   
     padding: 0px ;
     display: flex;
     justify-content: space-between;
@@ -62,10 +62,14 @@ nav .logo{
     gap:6px
 
 }
+nav h2{
+    color:rgb(25, 202, 25);
+    font-size: 20px;
+}
 
 .logo h2::first-letter{
-    color:rgb(52, 180, 110);
-    font-size: 20px;
+    color:rgb(239, 137, 3);
+    font-size: 25px;
     letter-spacing: 3px;
 }
 
@@ -195,7 +199,7 @@ img{
 .play-status{
     overflow: hidden;
     position: absolute;
-    bottom:4px;
+    bottom:2px;
     width: 97vw;
     height: 13vh;
     background-color: rgb(0, 0, 0);
@@ -209,7 +213,7 @@ img{
     width: 90vw;
     cursor: pointer;
     position: absolute;
-    top:27px;
+    top:23px;
 }
 
 .icons{
@@ -272,4 +276,60 @@ img{
     font-size: 1vw;
     font-weight: 100;
     letter-spacing: 1px;
+}
+
+
+
+
+
+
+/* //mediaQuerry */
+
+@media (max-width:600px) {
+
+    nav{
+        height: 50px;
+    }
+    nav .logo{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        left: 55px;
+    }
+    #progress-bar{
+       margin: -12px;
+    }
+
+    .icons{
+        margin-top: -3px;
+    }
+
+    .music-area{
+        height:73vh;
+        width:80vw;
+        position: absolute;
+        margin:-40px;
+
+    }
+    .status{
+        margin-top: -5px;
+        font-size: 16px;
+    }
+
+    .status img{
+        height: 10px;
+    }
+
+    .song-list{
+        overflow: scroll;
+       
+        scrollbar-width: none;
+        
+        width: 50vw;
+        
+    }
+    .song-item h2{
+        font-size: 2vw;
+    }
+    
 }
