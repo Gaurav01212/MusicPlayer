@@ -296,6 +296,9 @@ img{
         position: absolute;
         left: 55px;
     }
+    .play-status{
+        height: 11vh;
+    }
     #progress-bar{
        margin-top: -13px;
     }
