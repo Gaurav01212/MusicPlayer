@@ -297,7 +297,7 @@ img{
         left: 55px;
     }
     #progress-bar{
-       margin: -12px;
+       margin-top: -8px;
     }
 
     .icons{
@@ -318,6 +318,7 @@ img{
 
     .status img{
         height: 10px;
+        width:40px
     }
 
     .song-list{
@@ -325,11 +326,17 @@ img{
        
         scrollbar-width: none;
         
-        width: 50vw;
+        width: 70vw;
+        margin-left: 20px;
+        
         
     }
     .song-item h2{
         font-size: 2vw;
+    }
+
+    #master-song{
+        font-size: 5px;
     }
     
 }
