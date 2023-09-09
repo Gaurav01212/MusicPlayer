@@ -297,7 +297,7 @@ img{
         left: 55px;
     }
     #progress-bar{
-       margin-top: -8px;
+       margin-top: -15px;
     }
 
     .icons{
@@ -312,7 +312,7 @@ img{
 
     }
     .status{
-        margin-top: -5px;
+        margin-top: -10px;
         font-size: 16px;
     }
 
@@ -338,7 +338,9 @@ img{
     #master-song{
         font-size: 5px;
     }
+
     .play-status{
         height: 40px ;
     }
+    
 }
