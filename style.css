@@ -338,5 +338,7 @@ img{
     #master-song{
         font-size: 5px;
     }
-    
+    .play-status{
+        height: 40px ;
+    }
 }
